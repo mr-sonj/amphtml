@@ -49,7 +49,7 @@ export function installVideo(win) {
         assertHttpsUrl(this.element.getAttribute('src'), this.element);
       }
       this.propagateAttributes(
-          ['src', 'controls', 'autoplay', 'muted', 'loop', 'poster'],
+          ['src', 'controls', 'autoplay', 'muted', 'loop', 'poster','onended'],
           video);
       video.width = getLengthNumeral(width);
       video.height = getLengthNumeral(height);
